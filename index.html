@@ -67,8 +67,6 @@
     <!-- Topbar End -->
 
 
-
-    <!-- Navbar Start -->
     <div class="container-fluid nav-bar bg-white">
 <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4" style="height: 100px;">
             <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
@@ -95,12 +93,16 @@
                 </div>
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4  d-flex align-items-center">
 
-                            <img class="img_logo" style="margin-top: -40px;" src="./home pest and control logo long transparent.png"   height="250px" width="450px" alt="">
+                    <img id="logo" class="img_logo" style="margin-top: -40px;" src="./home pest and control logo long transparent.png" height="250px" width="450px" alt="">
                 </div>
             </div>
         </nav>
     </div>
+
+    
     <!-- Navbar End -->
+    <!-- Navbar Start -->
+
 
 
 
@@ -146,8 +148,8 @@
 
 <!-- Your static content goes here -->
 <div class="container-fluid p-0 mb-5">
-    <img class="img-fluid imageOfCarousel" src="./images/carousal.jpeg" alt="">
-    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4); margin-top: 100px; height: 100vh; width: 100%;">
+    <img class="img-fluid imageOfCarousel" src="./images/juliane-liebermann-O-RKu3Aqnsw-unsplash.jpg" alt="">
+    <div class="position-absolute top-0 start-0 w-100 h-140 d-flex align-items-center" style="background: rgba(0, 0, 0, .4); margin-top: 100px; height: 139vh; width: 100%;">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-10 ">
@@ -523,7 +525,7 @@ body {
                     <div class="card-title">RODENT <br> Control</div>
                     <img src="./images/image3.jpg" alt="Image 1">
                     <div class="card-logo">
-                        <img src="./images/desktop.jpg" alt="Logo Icon">
+                        <i class="fa fa-bug" style="color:white"></i>
                     </div>
                 </div>
             </div>
@@ -532,7 +534,7 @@ body {
                     <div class="card-title">TERMITE <br> Control</div>
                     <img src="./images/image4.jpg" alt="Image 1">
                     <div class="card-logo">
-                        <img src="./images/desktop.jpg" alt="Logo Icon">
+                        <i class="fa fa-bug" style="color:white"></i>
                     </div>
                 </div>
             </div>
@@ -546,7 +548,7 @@ body {
                     <div class="card-title">BED BUG <br> Control</div>
                     <img src="./images/image5.jpg" alt="Image 1">
                     <div class="card-logo">
-                        <img src="./images/desktop.jpg" alt="Logo Icon">
+                        <i class="fa fa-bug" style="color:white"></i>
                     </div>
                 </div>
             </div>
@@ -555,7 +557,7 @@ body {
                     <div class="card-title">MOSQUITO <br> Control</div>
                     <img src="./images/image6.jpg" alt="Image 1">
                     <div class="card-logo">
-                        <img src="./images/desktop.jpg" alt="Logo Icon">
+                        <i class="fa fa-bug" style="color:white"></i>
                     </div>
                 </div>
             </div>
@@ -564,7 +566,7 @@ body {
                     <div class="card-title">SPECIALITY <br> Control</div>
                     <img src="./images/image7.jpg" alt="Image 1">
                     <div class="card-logo">
-                        <img src="./images/desktop.jpg" alt="Logo Icon">
+                        <i class="fa fa-special" style="color:white"></i>
                     </div>
                 </div>
             </div>
@@ -573,7 +575,7 @@ body {
                     <div class="card-title">HOMEPEST <br> & <br> TERMITE CONTROL</div>
                     <img src="./images/image8.jpg" alt="Image 1">
                     <div class="card-logo">
-                        <img src="./images/desktop.jpg" alt="Logo Icon">
+                        <img src="./images/mosquito-solid (1).svg" alt="Logo Icon">
                     </div>
                 </div>
             </div>
@@ -825,6 +827,27 @@ function clickChange(change, buttonElement) {
   }
 }
 
+    // Get the logo element
+  const logo = document.getElementById('logo');
+
+// Function to handle the scroll event
+function handleScroll() {
+  // Reduce the logo size when the scroll position is greater than a specific value
+  if (window.scrollY > 100) {
+    logo.style.height = '170px';
+    logo.style.width = '290px';
+    logo.style.marginTop = '0px';
+  } else {
+    // Reset the logo size when the scroll position is less than the specified value
+    logo.style.height = '250px';
+    logo.style.width = '450px';
+    logo.style.marginTop = '-30px';
+
+  }
+}
+
+// Add an event listener to the window to trigger the handleScroll function on scroll
+window.addEventListener('scroll', handleScroll);
     
 </script>
 </body>
