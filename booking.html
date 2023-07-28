@@ -170,7 +170,7 @@
     </div>
     <!-- Booking End -->
         
-
+ 
         <!-- Footer Start -->
         <div style="background: #aa1712;" class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
@@ -229,7 +229,6 @@
         <!-- Footer End -->
 
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -248,6 +247,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
 
+<script>
+
+    var frontDetails = document.getElementById('details_front');
+var heading = document.getElementById('main_heading');
+
+function clickChange(change, buttonElement) {
+  // Remove the "active" class from all buttons
+  var buttons = document.querySelectorAll('.buttons_change h5');
+  buttons.forEach(button => button.classList.remove('active'));
+
+  // Add the "active" class to the clicked button
+  buttonElement.classList.add('active');
+
+  if (change === "1") {
+    frontDetails.innerHTML = '"For ongoing protection against common household pests, All-Safe Pest & Termite is the trusted choice for pest management! We have green and eco-friendly options available!"';
+    heading.innerHTML = "FOR FAST, EFECTIVE PEST CONTROL <br> In Dallas Fort Worth & Houston";
+  } else if (change === "2") {
+    frontDetails.innerHTML = "Keep mice and rats out of your home or business with hassle-free rodent control and removal from All-Safe Pest & Termite, backed with a service guarantee!";
+    heading.innerHTML = "GET STARTED WITH <br> Professional Rodent Control";
+  } else {
+    frontDetails.innerHTML = "Offering the highest level of termite protection in the form of Termidor® treatments and the Sentricon® System, All-Safe is a local expert in termite control!";
+    heading.innerHTML = "PREVENT COSTLY TERMITE DAMAGE <br> With Homepests Termite Services";
+  }
+}
+
+    
+</script>
+</body>
 </html>

@@ -67,10 +67,12 @@
     <!-- Topbar End -->
 
 
+
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar bg-white">
-<nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4" style="height: 100px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4 onlyForPc" >
             <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-                <h1 class="icon m-0"><img height="50px" src="./images/88632927277-removebg-preview.png" alt=""></h1>
+                <h1 class="icon m-0"><img height="70px" src="./images/88632927277-removebg-preview.png" alt=""></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -83,25 +85,27 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 20px;">Pest Guide</a>
                         <div class="dropdown-menu fade-up m-0">
-                            <a href="./pest_guide.html" class="dropdown-item" style="font-size: 17px;">Pest Guide</a>
-                            <a href="./where_we.html" class="dropdown-item" style="font-size: 17px;">Where we service</a>
                             <a href="./termites.html" class="dropdown-item" style="font-size: 17px;">Termites</a>
+                            <a href="./ants_cockroach.html" class="dropdown-item" style="font-size: 17px;">Ants & Cockroaches</a>
+                            <a href="./rodents.html" class="dropdown-item" style="font-size: 17px;">Rodents</a>
+                            <a href="./bedbugs.html" class="dropdown-item" style="font-size: 17px;">Bedbugs</a>
+                            <a href="./mosquitoes.html" class="dropdown-item" style="font-size: 17px;">Mosquitoes</a>
+                            <a href="./lawn_tree.html" class="dropdown-item" style="font-size: 17px;">Lawn Care & Tree Treatment</a>
+                            <a href="./comercial.html" class="dropdown-item" style="font-size: 17px;">Commercial</a>
                             <a href="./residential.html" class="dropdown-item" style="font-size: 17px;">Residential</a>
                         </div>
                     </div>
+                    <a href="./where_we.html" class="nav-item nav-link " style="font-size: 20px;">Where We Service</a>
                     <a href="contact.html" class="nav-item nav-link " style="font-size: 20px;">Contact us</a>
                 </div>
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4  d-flex align-items-center">
 
-                    <img id="logo" class="img_logo" style="margin-top: -40px;" src="./home pest and control logo long transparent.png" height="250px" width="450px" alt="">
+                            <img id="img_logo" class="img_logo" style="margin-top: -40px;" src="./home pest and control logo long transparent.png" width="350px" alt="">
                 </div>
             </div>
         </nav>
     </div>
-
-    
     <!-- Navbar End -->
-
 
 
 
@@ -142,13 +146,19 @@
     .imageOfCarousel {
         width: 100vw;
     }
+    @media (min-width:768px) {
+        .onlyForPc{
+            height: 80px;
+        }
+        
+    }
 </style>
 
 
 <!-- Your static content goes here -->
 <div class="container-fluid p-0 mb-5">
-    <img class="img-fluid imageOfCarousel" src="./images/juliane-liebermann-O-RKu3Aqnsw-unsplash.jpg" alt="">
-    <div class="position-absolute top-0 start-0 w-100 h-140 d-flex align-items-center" style="background: rgba(0, 0, 0, .4); margin-top: 100px; height: 139vh; width: 100%;">
+    <img class="img-fluid imageOfCarousel" src="./images/carousal.jpeg" alt="">
+    <div class="position-absolute top-0 start-0 w-100 h-170 d-flex align-items-center" style="background: rgba(0, 0, 0, .4); margin-top: 100px; height: 115vh; width: 100%;">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-10 ">
@@ -161,7 +171,7 @@
                     <br>
 
                     <h1 id="main_heading" style="font-size: 30px;" class="display-3 text-white mb-4">For Fast, Effective Pest Control <br> In Dallas Fort Worth & Houston</h1>
-                    <p class="fs-5 fw-medium text-white mb-4 pb-2" id="details_front">"For ongoing protection against common household pests,  HOMEPEST & TERMITE CONTROL INC. is the trusted choice for pest management! We have green and eco-friendly options available!"</p>
+                    <p class="fs-5 fw-medium text-white mb-4 pb-2" id="details_front">"For ongoing protection against common household pests, All-Safe Pest & Termite is the trusted choice for pest management! We have green and eco-friendly options available!"</p>
                     <div class="price-container text-center">
                         <br>
                         <br>
@@ -187,11 +197,7 @@
 
 <!-- add email -->
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
+
   .container1 {
     margin-left: 10%;
     width: 80vw;
@@ -288,6 +294,31 @@ body {
     font-size: 24px;
     color: #333; /* Dark text color */
   }
+
+  @media screen and (max-width: 768px) {
+  .container1 {
+    flex-direction: column; 
+    height: auto; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .container2 > div {
+    min-width: 80%;
+  }
+  .sub2 {
+    padding-left: 0;
+  }
+  .sub2 inpu
+  .email-input {
+    width: 90%;
+  }
+
+  .get-quote-button {
+    width: 100%; 
+  }
+}
 </style>
 
 <div class="container1">
@@ -377,7 +408,7 @@ body {
                     <img class="about_logo" src="./images/88632927277-removebg-preview.png" alt="">
                     <h1 class="mb-4 about_title">Family Owned & Operated Pest Control Experts In Dallas Fort Worth & Houston Since 1984
                     </h1>
-                    <p style="text-align: justify;" class="mb-4">At  HOMEPEST & TERMITE CONTROL INC., the majority of our business comes directly from customer referrals. We take our responsibility to provide professional, friendly service seriously. “It makes us work harder to show that we appreciate our customers’ business and friendship,” says founder, Jim Schumacher.</p>
+                    <p style="text-align: justify;" class="mb-4">At All-Safe Pest & Termite, the majority of our business comes directly from customer referrals. We take our responsibility to provide professional, friendly service seriously. “It makes us work harder to show that we appreciate our customers’ business and friendship,” says founder, Jim Schumacher.</p>
                     <div class="bg-primary d-flex align-items-center p-4 mt-5" style="background-color: #aa1712; border-radius: 10px;">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;background: #aa1712; border-radius: 10px;">
                             <i class="fa fa-phone fa-2x icon"></i>
@@ -418,9 +449,6 @@ body {
         </div>
     </div>
 </div>
-
-
-
 
 
 
@@ -540,7 +568,7 @@ body {
         <div class="mission-content">
             <h2 class="mission-title">MISSION</h2>
             <div class="content-box">
-                <p class="mission-paragraph"> HOMEPEST & TERMITE CONTROL INC. Pest Control is passionate about providing the safest and highest quality service while increasing the quality of life for our customers, employees, and communities, through a professional, responsible, and ethical approach to every service we provide. We don't strive to be the biggest company – we strive to be the best.</p>
+                <p class="mission-paragraph">HomeShield Pest Control is passionate about providing the safest and highest quality service while increasing the quality of life for our customers, employees, and communities, through a professional, responsible, and ethical approach to every service we provide. We don't strive to be the biggest company – we strive to be the best.</p>
             </div>
             <button class="core-values-btn">Our Core Values</button>
 
@@ -577,7 +605,7 @@ body {
                   <input style="border-radius: 7px;" type="text" class="form-control border-0" placeholder="City" style="height: 55px;">
                 </div>
                 <div class="col-md-4">
-                  <input style="border-radius: 7px;" type="text"   class="form-control border-0" placeholder="Zip Code" style="height: 55px;">
+                  <input style="border-radius: 7px;" type="text" class="form-control border-0" placeholder="Zip Code" style="height: 55px;">
                 </div>
                 <div class="col-md-4">
                   <select style="border-radius: 7px;" id="hear-about-us" class="form-select border-0" style="height: 55px;">
@@ -702,34 +730,8 @@ body {
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- Include jQuery and Owl Carousel library (if not already included) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $('.service-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                576: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                992: {
-                    items: 4
-                }
-            }
-        });
-    });
 
     var frontDetails = document.getElementById('details_front');
 var heading = document.getElementById('main_heading');
@@ -743,10 +745,10 @@ function clickChange(change, buttonElement) {
   buttonElement.classList.add('active');
 
   if (change === "1") {
-    frontDetails.innerHTML = '"For ongoing protection against common household pests,  HOMEPEST & TERMITE CONTROL INC. is the trusted choice for pest management! We have green and eco-friendly options available!"';
+    frontDetails.innerHTML = '"For ongoing protection against common household pests, All-Safe Pest & Termite is the trusted choice for pest management! We have green and eco-friendly options available!"';
     heading.innerHTML = "FOR FAST, EFECTIVE PEST CONTROL <br> In Dallas Fort Worth & Houston";
   } else if (change === "2") {
-    frontDetails.innerHTML = "Keep mice and rats out of your home or business with hassle-free rodent control and removal from  HOMEPEST & TERMITE CONTROL INC., backed with a service guarantee!";
+    frontDetails.innerHTML = "Keep mice and rats out of your home or business with hassle-free rodent control and removal from All-Safe Pest & Termite, backed with a service guarantee!";
     heading.innerHTML = "GET STARTED WITH <br> Professional Rodent Control";
   } else {
     frontDetails.innerHTML = "Offering the highest level of termite protection in the form of Termidor® treatments and the Sentricon® System, All-Safe is a local expert in termite control!";
@@ -754,27 +756,6 @@ function clickChange(change, buttonElement) {
   }
 }
 
-    // Get the logo element
-  const logo = document.getElementById('logo');
-
-// Function to handle the scroll event
-function handleScroll() {
-  // Reduce the logo size when the scroll position is greater than a specific value
-  if (window.scrollY > 100) {
-    logo.style.height = '170px';
-    logo.style.width = '290px';
-    logo.style.marginTop = '0px';
-  } else {
-    // Reset the logo size when the scroll position is less than the specified value
-    logo.style.height = '250px';
-    logo.style.width = '450px';
-    logo.style.marginTop = '-30px';
-
-  }
-}
-
-// Add an event listener to the window to trigger the handleScroll function on scroll
-window.addEventListener('scroll', handleScroll);
     
 </script>
 </body>

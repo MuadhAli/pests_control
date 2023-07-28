@@ -31,6 +31,10 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./changes.css">
+
+    <!-- css style for icon link w3 school -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -41,9 +45,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-
-
 
 
     <!-- Topbar Start -->
@@ -66,10 +67,12 @@
     <!-- Topbar End -->
 
 
+
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar bg-white">
-<nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4" style="height: 100px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4 onlyForPc" >
             <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-                <h1 class="icon m-0"><img height="50px" src="./images/88632927277-removebg-preview.png" alt=""></h1>
+                <h1 class="icon m-0"><img height="70px" src="./images/88632927277-removebg-preview.png" alt=""></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -82,26 +85,27 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 20px;">Pest Guide</a>
                         <div class="dropdown-menu fade-up m-0">
-                            <a href="./pest_guide.html" class="dropdown-item" style="font-size: 17px;">Pest Guide</a>
-                            <a href="./where_we.html" class="dropdown-item" style="font-size: 17px;">Where we service</a>
                             <a href="./termites.html" class="dropdown-item" style="font-size: 17px;">Termites</a>
+                            <a href="./ants_cockroach.html" class="dropdown-item" style="font-size: 17px;">Ants & Cockroaches</a>
+                            <a href="./rodents.html" class="dropdown-item" style="font-size: 17px;">Rodents</a>
+                            <a href="./bedbugs.html" class="dropdown-item" style="font-size: 17px;">Bedbugs</a>
+                            <a href="./mosquitoes.html" class="dropdown-item" style="font-size: 17px;">Mosquitoes</a>
+                            <a href="./lawn_tree.html" class="dropdown-item" style="font-size: 17px;">Lawn Care & Tree Treatment</a>
+                            <a href="./comercial.html" class="dropdown-item" style="font-size: 17px;">Commercial</a>
                             <a href="./residential.html" class="dropdown-item" style="font-size: 17px;">Residential</a>
                         </div>
                     </div>
+                    <a href="./where_we.html" class="nav-item nav-link " style="font-size: 20px;">Where We Service</a>
                     <a href="contact.html" class="nav-item nav-link " style="font-size: 20px;">Contact us</a>
                 </div>
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4  d-flex align-items-center">
 
-                    <img id="logo" class="img_logo" style="margin-top: -40px;" src="./home pest and control logo long transparent.png" height="250px" width="450px" alt="">
+                            <img id="img_logo" class="img_logo" style="margin-top: -40px;" src="./home pest and control logo long transparent.png" width="350px" alt="">
                 </div>
             </div>
         </nav>
     </div>
-
-    
     <!-- Navbar End -->
-
-
 
 
 
@@ -464,6 +468,7 @@
     <!-- Testimonial End  -->
         
 
+ 
         <!-- Footer Start -->
         <div style="background: #aa1712;" class="container-fluid  text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
@@ -522,7 +527,6 @@
         <!-- Footer End -->
 
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -541,76 +545,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.service-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                dots: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    768: {
-                        items: 3
-                    },
-                    992: {
-                        items: 4
-                    }
-                }
-            });
-        });
-    
-        var frontDetails = document.getElementById('details_front');
-    var heading = document.getElementById('main_heading');
-    
-    function clickChange(change, buttonElement) {
-      // Remove the "active" class from all buttons
-      var buttons = document.querySelectorAll('.buttons_change h5');
-      buttons.forEach(button => button.classList.remove('active'));
-    
-      // Add the "active" class to the clicked button
-      buttonElement.classList.add('active');
-    
-      if (change === "1") {
-        frontDetails.innerHTML = '"For ongoing protection against common household pests,  HOMEPEST & TERMITE CONTROL INC. is the trusted choice for pest management! We have green and eco-friendly options available!"';
-        heading.innerHTML = "FOR FAST, EFECTIVE PEST CONTROL <br> In Dallas Fort Worth & Houston";
-      } else if (change === "2") {
-        frontDetails.innerHTML = "Keep mice and rats out of your home or business with hassle-free rodent control and removal from  HOMEPEST & TERMITE CONTROL INC., backed with a service guarantee!";
-        heading.innerHTML = "GET STARTED WITH <br> Professional Rodent Control";
-      } else {
-        frontDetails.innerHTML = "Offering the highest level of termite protection in the form of Termidor® treatments and the Sentricon® System, All-Safe is a local expert in termite control!";
-        heading.innerHTML = "PREVENT COSTLY TERMITE DAMAGE <br> With Homepests Termite Services";
-      }
-    }
-    
-        // Get the logo element
-      const logo = document.getElementById('logo');
-    
-    // Function to handle the scroll event
-    function handleScroll() {
-      // Reduce the logo size when the scroll position is greater than a specific value
-      if (window.scrollY > 100) {
-        logo.style.height = '170px';
-        logo.style.width = '290px';
-        logo.style.marginTop = '0px';
-      } else {
-        // Reset the logo size when the scroll position is less than the specified value
-        logo.style.height = '250px';
-        logo.style.width = '450px';
-        logo.style.marginTop = '-30px';
-    
-      }
-    }
-    
-    // Add an event listener to the window to trigger the handleScroll function on scroll
-    window.addEventListener('scroll', handleScroll);
-        
-    </script>
-</body>
 
+<script>
+
+    var frontDetails = document.getElementById('details_front');
+var heading = document.getElementById('main_heading');
+
+function clickChange(change, buttonElement) {
+  // Remove the "active" class from all buttons
+  var buttons = document.querySelectorAll('.buttons_change h5');
+  buttons.forEach(button => button.classList.remove('active'));
+
+  // Add the "active" class to the clicked button
+  buttonElement.classList.add('active');
+
+  if (change === "1") {
+    frontDetails.innerHTML = '"For ongoing protection against common household pests, All-Safe Pest & Termite is the trusted choice for pest management! We have green and eco-friendly options available!"';
+    heading.innerHTML = "FOR FAST, EFECTIVE PEST CONTROL <br> In Dallas Fort Worth & Houston";
+  } else if (change === "2") {
+    frontDetails.innerHTML = "Keep mice and rats out of your home or business with hassle-free rodent control and removal from All-Safe Pest & Termite, backed with a service guarantee!";
+    heading.innerHTML = "GET STARTED WITH <br> Professional Rodent Control";
+  } else {
+    frontDetails.innerHTML = "Offering the highest level of termite protection in the form of Termidor® treatments and the Sentricon® System, All-Safe is a local expert in termite control!";
+    heading.innerHTML = "PREVENT COSTLY TERMITE DAMAGE <br> With Homepests Termite Services";
+  }
+}
+
+    
+</script>
+</body>
 </html>
