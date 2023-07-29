@@ -121,14 +121,35 @@
   }
 }
 
-.service_carousel{
-    height: 50vh;
-    width: 100vw;
-    background-image: url(./mosquito.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
+
+.service_carousel {
+  height: 50vh; 
+  width: 100%;
+  background-image: url(./mosquito.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.service_carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36, 35, 35, 0.404);
+  z-index: 1;
+}
+
+.service_carousel h1{
+  color: white;
+  z-index: 2;
+  font-weight: bold;
 }
 
 .one_service{
@@ -146,5 +167,44 @@
 .service_body{
     flex-basis: 70%;
     padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+.mosquito_control_image{
+  margin: 20px;
 }
 
+.mosquito_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.mosquito_control_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mosquito_control_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mosquito_control_content {
+  flex: 1;
+  order: 2; /* Move content to the right */
+}
+
+.mosquito_control_content h3 {
+  margin-top: 0;
+}
+
+.mosquito_control_image {
+  order: 1; /* Move image to the left */
+  margin-right: 20px;
+}
+
+.mosquito_control_image img {
+  height: 350px;
+}
