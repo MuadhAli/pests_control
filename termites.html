@@ -176,7 +176,7 @@
         </div>
     </div>
 
-    
+    <br><br>
     <div class="mosquito_control">
         <h1>Our Mosquito Control Process</h1>
         <div class="mosquito_control_section">
@@ -234,42 +234,42 @@
     </div>
     
 
-    <style>
-        .image-row-container {
-            display: flex;
-            justify-content: center; /* Align items in the middle horizontally */
-            align-items: center; /* Align items in the middle vertically */
-        }
-    
-        .middle-container {
-            position: relative;
-            border-radius: 20%;
-            width: 480px; /* Adjust the width as needed */
-            height: auto; /* Adjust the height as needed */
-            overflow: hidden;
-            margin: 10px; /* Add some margin between the images */
-        }
-    
-        .middle {
-            display: block;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.3s;
-        }
-    
-        .middle-container:hover::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-            border-radius: 20%; /* Match the border radius of the container */
-        }
-    
-        .middle-container:hover::after {
-            content: "homepest "; /* Add your desired text here */
+        <style>
+            .image-row-container {
+                display: flex;
+                justify-content: center; /* Align items in the middle horizontally */
+                align-items: center; /* Align items in the middle vertically */
+            }
+        
+            .middle-container {
+                position: relative;
+                border-radius: 20%;
+                width: 480px; /* Adjust the width as needed */
+                height: 350px; /* Adjust the height as needed */
+                overflow: hidden;
+                margin: 10px; /* Add some margin between the images */
+            }
+        
+            .middle {
+                display: block;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.3s;
+            }
+        
+            .middle-container:hover::after {
+                content: "tata";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+                border-radius: 20%; /* Match the border radius of the container */
+            }
+        
+            .middle-container:hover::after {
+            content:  "  "; /* Add your desired text here with a line break */
             position: absolute;
             top: 50%;
             left: 50%;
@@ -279,41 +279,86 @@
             font-weight: bold;
             z-index: 1;
         }
-    
-        /* Animation for the image */
-        .middle-container img {
-            transition: transform 0.3s;
-        }
-    
-        .middle-container:hover img {
-            transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
-        }
-    
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .middle-container {
-                width: 100%; /* Adjust the width for smaller screens */
-                height: auto; /* Adjust the height for smaller screens */
-                margin: 10px 0; /* Remove the left and right margin for smaller screens */
+        
+            /* Animation for the image */
+            .middle-container img {
+                transition: transform 0.3s;
             }
+            .middle-container img {
+            max-width: 100%; /* Set the width to 100% */
+            max-width: 100%; /* Set the height to 100% */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
         }
-    </style>
-    
-    <div style="text-align: center;">
-        <div class="image-row-container">
-            <div class="middle-container">
-                <img src="./service_pics/mosquito.jpg" alt="" class="middle" style="border: 2px solid #ccc;">
-            </div>
-            <div class="middle-container">
-                <img src="./service_pics/mosquito.jpg" alt="" class="middle" style="border: 2px solid #ccc;">
-            </div>
-            <div class="middle-container">
-                <img src="./service_pics/mosquito.jpg" alt="" class="middle" style="border: 2px solid #ccc;">
+        
+            .middle-container:hover img {
+                transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+            }
+        
+
+            .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 999;
+            font-size: 24px;
+        font-weight: bold;
+        z-index: 999;
+        text-align: center; /* Center the text horizontally */
+        }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .middle-container {
+            width: 100%; /* Adjust the width for smaller screens */
+            height: auto; /* Adjust the height for smaller screens */
+            margin: 10px 0; /* Remove the left and right margin for smaller screens */
+        }
+
+        .middle-container img {
+            max-width: 100%;
+            max-height: 250px; /* Adjust the maximum height for smaller screens */
+        }
+
+        .image-text {
+            font-size: 18px; /* Adjust font size for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .image-text {
+            font-size:auto; /* Further adjust font size for even smaller screens */
+        }
+    }
+        </style>
+        
+        <div style="text-align: center;">
+            <div class="image-row-container">
+                <div class="middle-container">          
+                    <a href="./rodents.html">
+                    <img src="./images/sercice5.jpg" alt="" class="middle" style="border: 2px solid #ccc;">
+                    <div class="image-text" style="font-size: 20px;"> Rodent Control <br><br> HOMEPEST <br> & <br> TERMITE CONTROL</div>
+                </a>
+                </div>
+                <div class="middle-container">
+                    <a href="./comercial.html">
+                        <img src="./images/service1.jpeg" alt="" class="middle" style="border: 2px solid #ccc;">
+                        <div class="image-text" style="font-size: 20px;"> Commercial Control <br><br> HOMEPEST <br> & <br> TERMITE CONTROL</div>
+                    </a>           
+                </div>
+                <div class="middle-container">
+                    <a href="./comercial.html">
+                        <img src="./images/service4.jpg" alt="" class="middle" style="border: 2px solid #ccc;">
+                        <div class="image-text" style="font-size: 20px;"> Mosquitoe Control <br><br> HOMEPEST <br> & <br> TERMITE CONTROL</div>
+                    </a>   
+                </div>
             </div>
         </div>
-    </div>
-    
-
+        
+    <br>
 
 
 
