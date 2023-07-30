@@ -205,6 +205,73 @@
         </div>
     </div>
     
+
+
+
+    <style>
+        .middle-container {
+            display: center;
+            position: relative;
+            border-radius: 20%;
+            width: 480px; /* Adjust the width as needed */
+            height: auto; /* Adjust the height as needed */
+            overflow: hidden;
+            margin-left: 30%;
+        }
+    
+        .middle {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+    
+        .middle-container:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            border-radius: 20%; /* Match the border radius of the container */
+        }
+    
+        .middle-container:hover::after {
+            content: "homepest "; /* Add your desired text here */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Text color */
+            font-size: 24px; /* Adjust font size as needed */
+            font-weight: bold;
+            z-index: 1;
+        }
+    
+        /* Animation for the image */
+        .middle-container img {
+            transition: transform 0.3s;
+        }
+    
+        .middle-container:hover img {
+            transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+        }
+    
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .middle-container {
+                width: 100%; /* Adjust the width for smaller screens */
+                height: auto; /* Adjust the height for smaller screens */
+            }
+        }
+    </style>
+    
+    <div style="text-align: center;">
+        <div class="middle-container">
+            <img src="./service_pics/mosquito.jpg" alt="" class="middle" style="border: 2px solid #ccc;">
+        </div>
+    </div>
     
 
     <div class="one_service">

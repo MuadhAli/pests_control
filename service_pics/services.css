@@ -207,6 +207,8 @@
 
 .mosquito_control_image img {
   height: 350px;
+  border-radius: 20px;
+
 }
 
 @media (max-width:768px) {
@@ -237,7 +239,15 @@
   }
   .service_IMG{
     max-width: 100vw;
+    .service_IMG {
+      display: inline-block; /* To fit the image size */
+      border-radius: 20px; /* Set the border radius for the container */
+      overflow: hidden; /* Hide any overflowing content with rounded corners */
   }
+  }
+  .service_IMG img {
+    border-radius: 20px; /* Set the border radius for the image */
+}
   .service_body{
     font-size: 16px;
   }
